@@ -1,0 +1,16 @@
+
+.App {
+  display: flex;
+  background-color:var(--blue);
+  width: 100%;
+  min-height: 800px;
+  overflow: hidden;
+
+}
+@media only screen and (max-width:600px){
+
+  .App{
+    flex-direction: column;
+  }
+}
+

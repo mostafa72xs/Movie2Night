@@ -1,0 +1,46 @@
+
+:root{
+  --blue:#0f1923;
+  --pink:#ff4655;
+}
+body[data-theme="dark-theme"] {
+  --blue:#0f1923;
+  --pink:#ff4655;
+}
+
+body[data-theme="black-theme"] {
+  --blue: rgb(24, 23, 23);
+  --pink: #00a82a;
+}
+
+body[data-theme="purple-theme"] {
+  --blue: rgb(56, 3, 56);
+  --pink: #00C9B8;
+}
+
+body[data-theme="brown-theme"] {
+  --blue: brown;
+  --pink: orange;
+}
+
+
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+@media only screen and (max-width:600px){
+  header{
+    display: none;
+  }
+  
+}

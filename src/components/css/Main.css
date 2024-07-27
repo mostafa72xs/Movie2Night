@@ -1,0 +1,268 @@
+@import url(react-multi-carousel/lib/styles.css);
+
+
+.main-content{
+    width: 100%;
+    height: auto;
+}
+.container{
+    width: 100%;
+    height: auto;
+}
+/* .filterbtn{
+    max-width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+.filterbtn button{
+    width: 95px;
+    height:40px;
+    background-color: var(--blue);
+    color:#fff;
+    border: 1px solid black;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 15px;
+}
+.filterbtn button:hover{
+    background-color: var(--pink);
+    transition: ease 0.5s ;
+} */
+.slider{
+    height: 350px;
+    width: 100%;
+    margin-top: 15px;
+    z-index: 20;
+}
+.slider .h1{
+    background-image: linear-gradient( to top , var(--blue), transparent , transparent) ;
+    color: #fff;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size:30px;
+    margin-left: 50px;
+    margin-bottom: -90px;
+    gap: 800px;
+    
+}
+.slider .h1 .button{
+    width:100px;
+    height: 40px;
+    border-radius: 30px;
+    text-align:center;
+    background-color: #fff;
+    border: none;
+    transition: 0.5s ease;
+}
+.slider .h1 .button:hover{
+    color: #fff;
+    background-color: var(--pink);
+}
+
+.cards{
+    max-width: 1200px;
+    width: 100%;
+    height: 300px;
+    margin-left:100px;
+    display: flex;
+    margin-top: 100px;
+    gap: 4px;
+    padding-bottom:-100px;
+    overflow:hidden
+}
+.model{
+    width: 100%;
+    min-height: 720px;
+    position: fixed;
+    z-index: 100;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    top: 0%;
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6));
+}
+.model .modeed{
+    width: 800px;
+    max-height: 500px;
+    margin-top: 250px;
+    overflow: hidden;
+    background-color: var(--blue);
+    border-radius: 30px;
+    display: flex;
+    position:fixed;
+    flex-direction: column;
+    transition: 0.5s ease-in-out;
+    animation-name: moded;
+    animation-duration: 0.8s;
+}
+@keyframes moded {
+    from{margin-top: 600px;}
+    to{margin-top: 250px;}
+}
+.model .modeed  .imagedd{
+    width: 200px;
+    height:280px;
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    gap: 20px;
+    flex-direction:column;
+
+}
+
+
+
+.model .modeed .imagedd img{
+    width:150px;
+    height:200px;
+    object-fit:fill;
+    margin-top: 50px;
+    margin-left: 50px;
+    padding-right:50px;
+}
+
+.model .modeed .close{
+    position:absolute;
+    background:transparent;
+    font-size: 2em;
+    color:white;
+    margin-left: 760px;
+    border:none;
+    cursor: pointer;
+}
+.model .modeed .info {
+    display:flex;
+    flex-direction:column;
+    justify-content: space-evenly;
+    width: 300px;
+    height:250px;
+    margin-left:250px;
+    margin-top:-200px;
+    border-radius:0;
+}
+.model .modeed .info .imdbbtn{
+    width: 120px;
+    height:30px;
+    border-radius: 30px;
+    background-color:gold;
+    color:black;
+    position:relative;
+    margin-left: 0px;
+    font-size: 10px;
+    margin-top: -20px;
+}
+.model .modeed .btnsd{
+    width:200px;
+    height:200px;
+    margin-left: 550px;
+    position: absolute;
+    margin-top:80px;
+    display :flex;
+    flex-direction:column;
+    align-items:center;
+    gap: 20px;
+
+}
+.model .modeed .btnsd .playbtn{
+    background:white;
+    color:var(--pink);
+    font-size:15px;
+    width:150px;
+    height:45px;
+    border-radius: 30px;
+    position:relative;
+    margin-left:0px;
+    transition: all 0.6s ease;
+    border:1px solid var(--blue);
+}
+
+
+.model .modeed .btnsd .playbtn:hover{
+    background-color: var(--blue);
+    border:1px solid #ffffff;
+
+    color: white;
+}
+.model .modeed .btnsd .playbtn:disabled{
+    opacity: 5;
+}
+.model .modeed .des{
+    width: 700px;
+    height:700px;
+    margin-left: 50px;
+}
+
+.carousel-button-group{
+    z-index: 40;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width:600px){
+    .main-content{
+        margin-top: 400px;
+    }
+    .cards{
+        margin-left: 0px;
+        max-width: 600px;
+    }
+    .slider .h1{
+        width: 100%;
+        max-width: 600px;
+        justify-content: space-between;
+        margin-left:0px;
+        gap: 0px;
+    }
+    .model{
+        min-height: 1000px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .model .modeed{
+        margin: 0;
+        width: 80%;
+        min-height: 700px;
+        flex-direction: column;
+    }
+    .modeed img{
+        margin: 0;
+    }
+    .model .modeed .info{
+        width: 50%;
+        margin-top: 30px;
+        margin-left: 5px
+    }
+    .model .modeed .des{
+        margin-left: 0;
+    }
+    .model .modeed .close{
+    margin:0 ;
+    margin-left: 300px;
+    }
+    .model .modeed .btnsd{
+        width: 50%;
+        margin-left: 180px;
+        margin-top:280px;
+    }
+}
