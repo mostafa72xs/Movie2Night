@@ -1,4 +1,4 @@
-.card{
+.carding{
     height: 280px;
     width: 150px;
     overflow: hidden;
@@ -9,7 +9,7 @@
     align-items: center;
 }
 
-.imgcontainer{
+.mmmi{
     width: 150px;
     height: 220px;
     max-width: 150px;
@@ -29,16 +29,16 @@
     opacity: 0;
 
 }
-.imgcontainer:hover .slideup{
+.mmmi:hover .slideup{
     opacity: 10;
 }
-.card img{
+.carding img{
     height: 220px;
     width: 150px;
     object-fit: fill;
     z-index: 2;
 }
-.card .h2{
+.carding .hee{
     z-index: 4;
     width: 150px;
     height: 30px;
@@ -47,7 +47,7 @@
     font-weight: bold;
     cursor: pointer;
 }
-.card .h2:hover{
+.carding .hee:hover{
     color: var(--pink);
 }
 
@@ -85,10 +85,14 @@
 
 
 
+@media only screen and (max-width:600px){
 
 
+.slideup{
+    opacity: 10;
 
-
+}
+}
 
 
 /* .cardwatchlist{

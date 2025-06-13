@@ -1,7 +1,7 @@
 
 :root{
-  --blue:#0f1923;
-  --pink:#ff4655;
+  --blue: rgb(24, 23, 23);
+  --pink: #00a82a;
 }
 body[data-theme="dark-theme"] {
   --blue:#0f1923;
@@ -26,7 +26,8 @@ body[data-theme="brown-theme"] {
 
 
 body {
-  margin: 0;
+  margin: 0 auto;
+  padding: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -37,10 +38,4 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
-}
-@media only screen and (max-width:600px){
-  header{
-    display: none;
-  }
-  
 }

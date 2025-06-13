@@ -1,0 +1,180 @@
+.MovieD{
+    width:100%;
+    background-color: var(--blue);
+    height: auto;
+}
+.backdrop{
+    width: 100%;
+    background-size: cover; 
+    height: 650px;
+}
+
+.deti{
+    height:100%;
+    width: 100%;
+    color:white;
+    background: rgba( 255, 255, 255, 0.15 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 9.5px );
+    -webkit-backdrop-filter: blur( 15px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    display:flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 10px !important;
+}
+.post{
+    border-radius: 10px;
+}
+.de{
+    display:flex;
+    gap: 10px !important;
+    width:600px;
+}
+.rate{
+    display:flex
+}
+h3{
+    font-weight: 400;
+    font-size: 20px;
+}
+.gen{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap:15px;
+}
+.g{
+    width:70px;
+    height: 30px;
+    font-size:10px;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    border-radius:4px;
+    background: rgba( 255, 255, 255, 0.15 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 9.5px );
+    -webkit-backdrop-filter: blur( 15px );
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+p{
+    font-size:13px;
+    margin-top: 10px;
+}
+.dede{
+    display: flex;
+    flex-direction: column;
+}
+.btnsD{
+    width:100%;
+    height: 100px;
+    padding-right: 50px; 
+    display: flex;
+    justify-content: flex-start;
+    gap:20px;
+    align-items: center;
+    border-top: 1px solid white;
+    margin-top:20px;
+}
+.btnsD button{
+    width:auto;
+    padding: 0 30px;
+    height: 45px;
+    border-radius:5px; 
+    border:none;
+    color:white;
+    background-color: rgb(58, 54, 54);
+    transition: 0.5s ease;
+}
+.btnsD button:hover{
+    background:var(--pink)
+}
+
+.liket{
+    width: 100%;
+    height:auto;
+
+}
+
+.apilist{
+    width:100%;
+    height: auto;
+    flex-wrap: wrap;
+    display:flex;
+    gap: 30px;
+    justify-content: center;
+    align-items:center;
+    margin-top:50px;
+    background-color: var(--blue);
+}
+
+.lk{
+    margin-left: 30px;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width:600px){
+    .backdrop{
+        height: auto;
+    }
+    .de{
+        flex-direction: column;
+        width:100% !important;
+        justify-content: center;
+        margin-top: 50px;
+        align-items: center;
+    }
+    .boxof{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .deti{
+        align-items: center;
+        justify-content: center;
+    }
+    h3{
+        font-size: 25px;
+    }
+    .gen{
+        justify-content: center;
+        width: 70%;
+    }
+
+    p{
+        text-align: center;
+        width: 90%;
+    }
+    .btnsD{
+        padding-right: 0;
+        justify-content: center;
+    }
+    .btnsD button{
+        padding: 0 20px;
+        font-size: 12px;
+    }
+    .liket{
+        margin-top: 50px;
+    }
+}

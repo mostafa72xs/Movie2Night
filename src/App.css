@@ -1,9 +1,9 @@
 
 .App {
+  box-sizing: border-box;
   display: flex;
   background-color:var(--blue);
-  width: 100%;
-  min-height: 800px;
+  width: auto;
   overflow: hidden;
 
 }
